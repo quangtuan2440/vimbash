@@ -51,7 +51,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-source /usr/share/doc/fzf/examples/fzf.vim
+source ~/.vim/pack/plugins/start/fzf/plugin/fzf.vim
 
 let g:fzf_preview_window = 'right:20%'
 

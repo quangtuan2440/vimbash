@@ -11,7 +11,8 @@ git init
 git submodule add https://github.com/rakr/vim-one.git colors/start/one
 
 # plugins
-git submodule add https://github.com/junegunn/fzf.vim.git plugins/start/fzf
+git submodule add https://github.com/junegunn/fzf.git plugins/start/fzf
+git submodule add https://github.com/junegunn/fzf.vim.git plugins/start/fzf-vim
 git submodule add https://github.com/itchyny/lightline.vim.git plugins/start/lightline
 git submodule add https://github.com/tpope/vim-surround.git plugins/start/vim-surround
 git submodule add https://github.com/neoclide/coc.nvim.git plugins/start/coc
