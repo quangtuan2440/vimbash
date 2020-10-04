@@ -16,7 +16,6 @@ git submodule add https://github.com/itchyny/lightline.vim.git plugins/start/lig
 git submodule add https://github.com/tpope/vim-surround.git plugins/start/vim-surround
 git submodule add https://github.com/neoclide/coc.nvim.git plugins/start/coc
 
-
 # syntax
 git submodule add https://github.com/pangloss/vim-javascript.git syntax/start/vim-javascript
 
@@ -39,4 +38,8 @@ git submodule add https://github.com/preservim/nerdcommenter.git comment/start/n
 sudo apt install silversearcher-ag
 
 echo export FZF_DEFAULT_COMMAND=\'ag -p ~/.gitignore -g \"\"\'>>~/.bashrc
+
+# checkout coc to release branch
+cd ~/.vim/pack/plugins/start/coc
+git checkout release
 
