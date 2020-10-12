@@ -1,16 +1,4 @@
-nnoremap <leader>ov :exe ':silent !code %'<CR>:redraw!<CR>''
-
-" switch tabs (same as gt & gT)
-nnoremap <C-j> :tabprevious<CR>
-nnoremap <C-k> :tabnext<CR>
-"
-" (bonus) move tabls right or left
-map <C-h> :execute "tabmove" tabpagenr() - 2 <CR>
-map <C-l> :execute "tabmove" tabpagenr() + 1 <CR>
-
-"colors
-set t_8b=^[[48;2;%lu;%lu;%lum
-set t_8f=^[[38;2;%lu;%lu;%lum]]
+set noswapfile
 
 let g:airline_theme='one'
 
