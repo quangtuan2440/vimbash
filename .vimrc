@@ -1,7 +1,5 @@
 set noswapfile
 
-let g:airline_theme='one'
-
 "Credit joshdick
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -24,7 +22,7 @@ set background=light " for the light version
 colorscheme one
 
 "FZF
-nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <C-p> :GFiles<CR>
 
 "javascript configs
 "let g:javascript_plugin_jsdoc = 1
@@ -52,6 +50,15 @@ set shiftwidth=2
 set expandtab
 
 "coc
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-angular',
+  \ 'coc-eslint', 
+  \ 'coc-prettier', 
+  \ 'coc-json', 
+  \ ]
 
 " TextEdit might fail if hidden is not set.
 set hidden
