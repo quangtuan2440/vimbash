@@ -29,6 +29,9 @@ colorscheme one
 
 "FZF
 nnoremap <silent> <C-p> :GFiles<CR>
+nnoremap <silent> <C-h> :History<CR>
+"nnoremap <Leader>b :Buffers<CR>
+"nnoremap <Leader>h :History<CR>
 
 "javascript configs
 "let g:javascript_plugin_jsdoc = 1
@@ -126,7 +129,7 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
+"nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
@@ -147,8 +150,11 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+"xmap <leader>f  <Plug>(coc-format-selected)
+"nmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f :CocCommand prettier.formatFile<cr>
+vmap <leader>f <Plug>(coc-format-selected)
+
 
 augroup mygroup
   autocmd!
